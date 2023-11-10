@@ -1,0 +1,14 @@
+function waktu (nama) {
+    var today = new Date();
+    var hours = today.getHours();
+    // var hours = 23;
+    var minutes = today.getMinutes();
+     if ( hours <=  11) {
+        console.log(` Selamat Pagi ${nama} , Waktu sekarang ${hours}:${minutes < 10 ? "0" : ""}${minutes}`);
+    }else if( hours <= 14 ){
+        console.log(` Selamat Siang ${nama}, Waktu sekarang ${hours}:${minutes < 10 ? "0" : ""}${minutes}`);
+    }else if ( hours <= 19){
+        console.log(` Selamat Sore ${nama}, Waktu sekarang ${hours}:${minutes < 10 ? "0" : ""}${minutes}`);
+     }else if (hours <= 24){
+        console.log(` Selamat Malem ${nama}, Waktu sekarang ${hours}:${minutes < 10 ? "0" : ""}${minutes}`);
+     }

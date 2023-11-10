@@ -1,0 +1,22 @@
+//objek
+let hotel = {
+    namahotel : "DMAX Royal Solution",
+    alamat : "766W+3GF, Jl. Bypass Bandara Int. Lombok, Batujai, Kec. Praya Bar., Kabupaten Lombok Tengah, Nusa Tenggara Bar. 83516",
+    jumlahKamar : 56,
+    fasilitas : {
+        1 : "kamar Mandi",
+        2 : "Kolam Renang",
+        3 : "CapFreeDay",
+        4 : "Bar Minuman"
+    },
+    klasifikasiHotel : "Hotel Bintang Lima",
+    booking : function (params, nama){
+        if (params == true){
+            return(`selamat anda telah Memboking hotel ${this.namahotel} dengan nama ${nama}`)
+        }else {
+            return(`Pembatalan telah diterima oleh Pihak ${this.namahotel} dengan nama ${nama}`)
+        }
+    }
+}
+
+console.log(hotel.booking(true,"layli"))
